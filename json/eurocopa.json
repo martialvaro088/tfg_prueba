@@ -1,0 +1,834 @@
+{
+    "temporada": "2011/2012",
+    "fases": [
+        {
+            "grupos": [
+                {
+                    "jornada": 1,
+                    "partidos": [
+                        {
+                            "partido": 1,
+                            "grupo": "A",
+                            "foto": "/assets/fotos/pol_gre_grupo.jpg",
+                            "datos": {
+                                "local": "Polonia",
+                                "visitante": "Grecia",
+                                "resultado": "1 - 1",
+                                "fecha": "2012-06-08",
+                                "goles": [
+                                    {
+                                        "minuto": 17,
+                                        "jugador": "Lewandowski",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 51,
+                                        "jugador": "Salpingidis",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 2,
+                            "grupo": "A",
+                            "foto": "/assets/fotos/rus_che_grupo.jpg",
+                            "datos": {
+                                "local": "Rusia",
+                                "visitante": "Chequia",
+                                "resultado": "4 - 1",
+                                "fecha": "2012-06-08",
+                                "goles": [
+                                    {
+                                        "minuto": 15,
+                                        "jugador": "Dzagoev",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 79,
+                                        "jugador": "Dzagoev",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 34,
+                                        "jugador": "Shirokov",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 82,
+                                        "jugador": "Pávliuchenko",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 52,
+                                        "jugador": "Pilař",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 3,
+                            "grupo": "B",
+                            "foto": "/assets/fotos/hol_din_grupo.jpg",
+                            "datos": {
+                                "local": "Holanda",
+                                "visitante": "Dinamarca",
+                                "resultado": "0 - 1",
+                                "fecha": "2012-06-09",
+                                "goles": [
+                                    {
+                                        "minuto": 24,
+                                        "jugador": "Krohn-Dehli",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 4,
+                            "grupo": "B",
+                            "foto": "/assets/fotos/ale_por_grupo.jpeg",
+                            "datos": {
+                                "local": "Alemania",
+                                "visitante": "Portugal",
+                                "resultado": "1 - 0",
+                                "fecha": "2012-06-09",
+                                "goles": [
+                                    {
+                                        "minuto": 72,
+                                        "jugador": "Gómez",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 5,
+                            "grupo": "C",
+                            "foto": "/assets/fotos/esp_ita_grupo.jpeg",
+                            "datos": {
+                                "local": "España",
+                                "visitante": "Italia",
+                                "resultado": "1 - 1",
+                                "fecha": "2012-06-10",
+                                "goles": [
+                                    {
+                                        "minuto": 64,
+                                        "jugador": "Fábregas",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 61,
+                                        "jugador": "Di natale",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 6,
+                            "grupo": "C",
+                            "foto": "/assets/fotos/irl_cro_grupo.jpg",
+                            "datos": {
+                                "local": "Irlanda",
+                                "visitante": "Croacia",
+                                "resultado": "1 - 3",
+                                "fecha": "2012-06-10",
+                                "goles": [
+                                    {
+                                        "minuto": 19,
+                                        "jugador": "St Ledger",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 3,
+                                        "jugador": "Mandžukić",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 48,
+                                        "jugador": "Mandžukić",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 3,
+                                        "jugador": "Jelavic",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 7,
+                            "grupo": "D",
+                            "foto": "/assets/fotos/fra_ing_grupo.jpg",
+                            "datos": {
+                                "local": "Francia",
+                                "visitante": "Inglaterra",
+                                "resultado": "1 - 1",
+                                "fecha": "2012-06-11",
+                                "goles": [
+                                    {
+                                        "minuto": 39,
+                                        "jugador": "Nasri",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 30,
+                                        "jugador": "Lescott",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 8,
+                            "grupo": "D",
+                            "foto": "/assets/fotos/ucr_sue_grupo.jpeg",
+                            "datos": {
+                                "local": "Ucrania",
+                                "visitante": "Suecia",
+                                "resultado": "2 - 1",
+                                "fecha": "2012-06-11",
+                                "goles": [
+                                    {
+                                        "minuto": 55,
+                                        "jugador": "Shevchenko",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 61,
+                                        "jugador": "Shevchenko",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 52,
+                                        "jugador": "Ibrahimović",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "jornada": 2,
+                    "partidos": [
+                        {
+                            "partido": 1,
+                            "grupo": "A",
+                            "foto": "/assets/fotos/gre_che_grupo.jpg",
+                            "datos": {
+                                "local": "Grecia",
+                                "visitante": "Chequia",
+                                "resultado": "1 - 2",
+                                "fecha": "2012-06-12",
+                                "goles": [
+                                    {
+                                        "minuto": 53,
+                                        "jugador": "Gekas",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 3,
+                                        "jugador": "Jiráček",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 6,
+                                        "jugador": "Pilař",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 2,
+                            "grupo": "A",
+                            "foto": "/assets/fotos/pol_rus_grupo.jpg",
+                            "datos": {
+                                "local": "Polonia",
+                                "visitante": "Rusia",
+                                "resultado": "1 - 1",
+                                "fecha": "2012-06-12",
+                                "goles": [
+                                    {
+                                        "minuto": 57,
+                                        "jugador": "Blaszczykowski",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 37,
+                                        "jugador": "Dzagoev",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 3,
+                            "grupo": "B",
+                            "foto": "/assets/fotos/din_por_grupo.jpg",
+                            "datos": {
+                                "local": "Dinamarca",
+                                "visitante": "Portugal",
+                                "resultado": "2 - 3",
+                                "fecha": "2012-06-13",
+                                "goles": [
+                                    {
+                                        "minuto": 41,
+                                        "jugador": "Bendtner",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 80,
+                                        "jugador": "Bendtner",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 24,
+                                        "jugador": "Hélder Postiga",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 36,
+                                        "jugador": "Pepe",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 87,
+                                        "jugador": "Varela ",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 4,
+                            "grupo": "B",
+                            "foto": "/assets/fotos/hol_ale_grupo.jpg",
+                            "datos": {
+                                "local": "Holanda",
+                                "visitante": "Alemania",
+                                "resultado": "1 - 2",
+                                "fecha": "2012-06-13",
+                                "goles": [
+                                    {
+                                        "minuto": 73,
+                                        "jugador": "Van Persie",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 24,
+                                        "jugador": "Gómez",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 38,
+                                        "jugador": "Gómez",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 5,
+                            "grupo": "C",
+                            "foto": "/assets/fotos/ita_cro_grupo.jpg",
+                            "datos": {
+                                "local": "Italia",
+                                "visitante": "Croacia",
+                                "resultado": "1 - 1",
+                                "fecha": "2012-06-14",
+                                "goles": [
+                                    {
+                                        "minuto": 39,
+                                        "jugador": "Pirlo",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 72,
+                                        "jugador": "Mandžukić",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 6,
+                            "grupo": "C",
+                            "foto": "/assets/fotos/esp_irl_grupo.jpg",
+                            "datos": {
+                                "local": "España",
+                                "visitante": "Irlanda",
+                                "resultado": "4 - 0",
+                                "fecha": "2012-06-14",
+                                "goles": [
+                                    {
+                                        "minuto": 4,
+                                        "jugador": "Torres",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 70,
+                                        "jugador": "Torres",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 49,
+                                        "jugador": "David Silva",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 83,
+                                        "jugador": "Fábregas",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 7,
+                            "grupo": "D",
+                            "foto": "/assets/fotos/ucr_fra_grupo.jpg",
+                            "datos": {
+                                "local": "Ucrania",
+                                "visitante": "Francia",
+                                "resultado": "0 - 2",
+                                "fecha": "2012-06-15",
+                                "goles": [
+                                    {
+                                        "minuto": 53,
+                                        "jugador": "Ménez",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 56,
+                                        "jugador": "Cabaye",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 8,
+                            "grupo": "D",
+                            "foto": "/assets/fotos/sue_ing_grupo.jpeg",
+                            "datos": {
+                                "local": "Suecia",
+                                "visitante": "Inglaterra",
+                                "resultado": "2 - 3",
+                                "fecha": "2012-06-15",
+                                "goles": [
+                                    {
+                                        "minuto": 49,
+                                        "jugador": "Johnson",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 59,
+                                        "jugador": "Melberg",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 23,
+                                        "jugador": "Carrol",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 64,
+                                        "jugador": "Walcot",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 78,
+                                        "jugador": "Welbeck",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "jornada": 3,
+                    "partidos": [
+                        {
+                            "partido": 1,
+                            "grupo": "A",
+                            "foto": "/assets/fotos/che_pol_grupo.jpg",
+                            "datos": {
+                                "local": "Chequia",
+                                "visitante": "Polonia",
+                                "resultado": "1 - 0",
+                                "fecha": "2012-06-16",
+                                "goles": [
+                                    {
+                                        "minuto": 72,
+                                        "jugador": "Jiráček",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 2,
+                            "grupo": "A",
+                            "foto": "/assets/fotos/gre_rus_grupo.jpg",
+                            "datos": {
+                                "local": "Grecia",
+                                "visitante": "Rusia",
+                                "resultado": "1 - 0",
+                                "fecha": "2012-06-16",
+                                "goles": [
+                                    {
+                                        "minuto": 45,
+                                        "jugador": "Karagounis",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 3,
+                            "grupo": "B",
+                            "foto": "/assets/fotos/por_hol_grupo.jpg",
+                            "datos": {
+                                "local": "Portugal",
+                                "visitante": "Holanda",
+                                "resultado": "2 - 1",
+                                "fecha": "2012-06-17",
+                                "goles": [
+                                    {
+                                        "minuto": 28,
+                                        "jugador": "Ronaldo",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 74,
+                                        "jugador": "Ronaldo",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 11,
+                                        "jugador": "Van der Vaart",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 4,
+                            "grupo": "B",
+                            "foto": "/assets/fotos/din_ale_grupo.jpg",
+                            "datos": {
+                                "local": "Dinamarca",
+                                "visitante": "Alemania",
+                                "resultado": "1 - 2",
+                                "fecha": "2012-06-17",
+                                "goles": [
+                                    {
+                                        "minuto": 24,
+                                        "jugador": "Krohn-Dehli",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 19,
+                                        "jugador": "Podolski",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 80,
+                                        "jugador": "L. Bender",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 5,
+                            "grupo": "C",
+                            "foto": "/assets/fotos/cro_esp_grupo.jpg",
+                            "datos": {
+                                "local": "Croacia",
+                                "visitante": "España",
+                                "resultado": "0 - 1",
+                                "fecha": "2012-06-18",
+                                "goles": [
+                                    {
+                                        "minuto": 88,
+                                        "jugador": "Jesús Navas",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 6,
+                            "grupo": "C",
+                            "foto": "/assets/fotos/ita_irl_grupo.jpg",
+                            "datos": {
+                                "local": "Italia",
+                                "visitante": "Irlanda",
+                                "resultado": "2 - 0",
+                                "fecha": "2012-06-18",
+                                "goles": [
+                                    {
+                                        "minuto": 35,
+                                        "jugador": "Cassano",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 90,
+                                        "jugador": "Balotelli",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 7,
+                            "grupo": "D",
+                            "foto": "/assets/fotos/ing_ucr_grupo.jpeg",
+                            "datos": {
+                                "local": "Inglaterra",
+                                "visitante": "Ucrania",
+                                "resultado": "1 - 0",
+                                "fecha": "2012-06-19",
+                                "goles": [
+                                    {
+                                        "minuto": 48,
+                                        "jugador": "Rooney",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 8,
+                            "grupo": "D",
+                            "foto": "/assets/fotos/sue_fra_grupo.jpeg",
+                            "datos": {
+                                "local": "Suecia",
+                                "visitante": "Francia",
+                                "resultado": "2 - 0",
+                                "fecha": "2012-06-19",
+                                "goles": [
+                                    {
+                                        "minuto": 54,
+                                        "jugador": "Ibrahimović",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 90,
+                                        "jugador": "S. Larsson",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cuartos": [
+                {
+                    "partidos": [
+                        {
+                            "partido": 1,
+                            "detalles": "Pasa Portugal",
+                            "penaltis": "",
+                            "foto": "/assets/fotos/che_por_cuartos.jpeg",
+                            "datos": {
+                                "local": "Chequia",
+                                "visitante": "Portugal",
+                                "resultado": "0 - 1",
+                                "fecha": "2012-06-21",
+                                "goles": [
+                                    {
+                                        "minuto": 79,
+                                        "jugador": "Ronaldo",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 2,
+                            "detalles": "Pasa Alemania",
+                            "penaltis": "",
+                            "foto": "/assets/fotos/ale_gre_cuartos.jpg",
+                            "datos": {
+                                "local": "Alemania",
+                                "visitante": "Grecia",
+                                "resultado": "4 - 2",
+                                "fecha": "2012-06-22",
+                                "goles": [
+                                    {
+                                        "minuto": 39,
+                                        "jugador": "Lahm",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 61,
+                                        "jugador": "Khedira",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 68,
+                                        "jugador": "Cierre",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 74,
+                                        "jugador": "Reús",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 55,
+                                        "jugador": "Sámaras",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 89,
+                                        "jugador": "Salpingidis",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 3,
+                            "detalles": "Pasa España",
+                            "penaltis": "",
+                            "foto": "/assets/fotos/esp_fra_cuartos.jpg",
+                            "datos": {
+                                "local": "España",
+                                "visitante": "Francia",
+                                "resultado": "2 - 0",
+                                "fecha": "2012-06-23",
+                                "goles": [
+                                    {
+                                        "minuto": 19,
+                                        "jugador": "Xabi Alonso",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 90,
+                                        "jugador": "Xabi Alonso",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "partido": 4,
+                            "detalles": "Pasa Italia en los penaltis (2-4)",
+                            "penaltis": "2 - 4",
+                            "foto": "/assets/fotos/ing_ita_cuartos.jpg",
+                            "datos": {
+                                "local": "Inglaterra",
+                                "visitante": "Italia",
+                                "resultado": "0 - 0",
+                                "fecha": "2012-06-24",
+                                "goles": []
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "semis": [
+                {
+                    "partidos": [
+                        {
+                            "partido": 1,
+                            "detalles": "Pasa España en los penaltis (2-4)",
+                            "penaltis": "2 - 4",
+                            "foto": "/assets/fotos/esp_por_semis.jpeg",
+                            "datos": {
+                                "local": "Portugal",
+                                "visitante": "España",
+                                "resultado": "0 - 0",
+                                "fecha": "2012-06-27",
+                                "goles": []
+                            }
+                        },
+                        {
+                            "partido": 2,
+                            "detalles": "Pasa Alemania",
+                            "penaltis": "",
+                            "foto": "/assets/fotos/ale_ita_semis.jpg",
+                            "datos": {
+                                "local": "Alemania",
+                                "visitante": "Itaia",
+                                "resultado": "1 - 2",
+                                "fecha": "2012-06-28",
+                                "goles": [
+                                    {
+                                        "minuto": 90,
+                                        "jugador": "Özil",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 20,
+                                        "jugador": "Balotelli",
+                                        "equipo": "visitante"
+                                    },
+                                    {
+                                        "minuto": 36,
+                                        "jugador": "Balotelli",
+                                        "equipo": "visitante"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "final": [
+                {
+                    "partidos": [
+                        {
+                            "partido": 1,
+                            "foto": "/assets/fotos/final_esp_ita.jpg",
+                            "datos": {
+                                "local": "ESPAÑA",
+                                "visitante": "ITALIA",
+                                "resultado": "4 - 0",
+                                "fecha": "2012-07-01",
+                                "goles": [
+                                    {
+                                        "minuto": 14,
+                                        "jugador": "David Silva",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 41,
+                                        "jugador": "Jordi Alba",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 84,
+                                        "jugador": "Torres",
+                                        "equipo": "local"
+                                    },
+                                    {
+                                        "minuto": 88,
+                                        "jugador": "Mata",
+                                        "equipo": "local"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

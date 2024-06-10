@@ -1,0 +1,124 @@
+.h2_final {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.img_sidebar {
+    width: 120px;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 200px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.partido_final {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.tarjeta_partido_final {
+    background-color: #252525;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 12px;
+}
+
+.contenedor_foto_final {
+    margin-top: -2.2%;
+}
+
+.foto_final {
+    width: -webkit-fill-available;
+    border-radius: 12px;
+    margin-bottom: -0.4%;
+}
+
+.linea_1_final {
+    display: flex;
+    text-align: center;
+    width: 25%;
+    margin-left: 29.05%;
+}
+
+.nombre_equipo_local_final {
+    color: white;
+}
+
+.guion_final {
+    color: white;
+    margin-left: 23%;
+    margin-right: 23%;
+}
+
+.nombre_equipo_visitante_final {
+    color: white;
+}
+
+.contenedor_resultado_final {
+    display: flex;
+    margin-top: -3%;
+}
+
+.resultado_local_final {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 36.5%;
+}
+
+.resultado_visitante_final {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 21%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.contenedor_icono_balon_final {
+    text-align: -webkit-center;
+}
+
+.icono_balon_final {
+    width: 50px;
+    height: 50px;
+}
+
+.goles_final {
+    display: flex;
+    margin-top: -2%;
+}
+
+.goles_locales_final {
+    margin-left: 27%;
+}
+
+.gol_local_final {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.linea_abajo_final {
+    display: ruby-text;
+    margin-bottom: -1.5%;
+}
+
+.icono_youtube_final {
+    width: 30px;
+    margin-bottom: -0.5%;
+}
+
+.fecha_final {
+    color: white;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 35%;
+}

@@ -1,0 +1,220 @@
+{
+    "grupos": [
+        {
+            "grupo": 1,
+            "nombre": "Grupo A",
+            "equipos": [
+                {
+                    "equipo": 1,
+                    "nombre": "Chequia",
+                    "partidos": 3,
+                    "victorias": 2,
+                    "derrotas": 1,
+                    "empates": 0,
+                    "goles_a_favor": 4,
+                    "goles_en_contra": 5,
+                    "diferencia_de_goles": -1,
+                    "puntos": 6
+                },
+                {
+                    "equipo": 2,
+                    "nombre": "Grecia",
+                    "partidos": 3,
+                    "victorias": 1,
+                    "derrotas": 1,
+                    "empates": 1,
+                    "goles_a_favor": 3,
+                    "goles_en_contra": 3,
+                    "diferencia_de_goles": 0,
+                    "puntos": 4
+                },
+                {
+                    "equipo": 3,
+                    "nombre": "Rusia",
+                    "partidos": 3,
+                    "victorias": 1,
+                    "derrotas": 1,
+                    "empates": 1,
+                    "goles_a_favor": 5,
+                    "goles_en_contra": 3,
+                    "diferencia_de_goles": 2,
+                    "puntos": 4
+                },
+                {
+                    "equipo": 4,
+                    "nombre": "Polonia",
+                    "partidos": 3,
+                    "victorias": 0,
+                    "derrotas": 1,
+                    "empates": 2,
+                    "goles_a_favor": 2,
+                    "goles_en_contra": 3,
+                    "diferencia_de_goles": -1,
+                    "puntos": 2
+                }
+            ]
+        },
+        {
+            "grupo": 2,
+            "nombre": "Grupo B",
+            "equipos": [
+                {
+                    "equipo": 1,
+                    "nombre": "Alemania",
+                    "partidos": 3,
+                    "victorias": 3,
+                    "derrotas": 0,
+                    "empates": 0,
+                    "goles_a_favor": 5,
+                    "goles_en_contra": 2,
+                    "diferencia_de_goles": 3,
+                    "puntos": 9
+                },
+                {
+                    "equipo": 2,
+                    "nombre": "Portugal",
+                    "partidos": 3,
+                    "victorias": 2,
+                    "derrotas": 1,
+                    "empates": 0,
+                    "goles_a_favor": 5,
+                    "goles_en_contra": 4,
+                    "diferencia_de_goles": 1,
+                    "puntos": 6
+                },
+                {
+                    "equipo": 3,
+                    "nombre": "Dinamarca",
+                    "partidos": 3,
+                    "victorias": 1,
+                    "derrotas": 2,
+                    "empates": 0,
+                    "goles_a_favor": 4,
+                    "goles_en_contra": 5,
+                    "diferencia_de_goles": -1,
+                    "puntos": 3
+                },
+                {
+                    "equipo": 4,
+                    "nombre": "Holanda",
+                    "partidos": 3,
+                    "victorias": 0,
+                    "derrotas": 3,
+                    "empates": 0,
+                    "goles_a_favor": 2,
+                    "goles_en_contra": 5,
+                    "diferencia_de_goles": -3,
+                    "puntos": 0
+                }
+            ]
+        },
+        {
+            "grupo": 3,
+            "nombre": "Grupo C",
+            "equipos": [
+                {
+                    "equipo": 1,
+                    "nombre": "España",
+                    "partidos": 3,
+                    "victorias": 2,
+                    "derrotas": 0,
+                    "empates": 1,
+                    "goles_a_favor": 6,
+                    "goles_en_contra": 1,
+                    "diferencia_de_goles": 5,
+                    "puntos": 7
+                },
+                {
+                    "equipo": 2,
+                    "nombre": "Italia",
+                    "partidos": 3,
+                    "victorias": 1,
+                    "derrotas": 0,
+                    "empates": 2,
+                    "goles_a_favor": 4,
+                    "goles_en_contra": 2,
+                    "diferencia_de_goles": 2,
+                    "puntos": 5
+                },
+                {
+                    "equipo": 3,
+                    "nombre": "Croacia",
+                    "partidos": 3,
+                    "victorias": 1,
+                    "derrotas": 1,
+                    "empates": 1,
+                    "goles_a_favor": 4,
+                    "goles_en_contra": 3,
+                    "diferencia_de_goles": 1,
+                    "puntos": 4
+                },
+                {
+                    "equipo": 4,
+                    "nombre": "Irlanda",
+                    "partidos": 3,
+                    "victorias": 0,
+                    "derrotas": 3,
+                    "empates": 0,
+                    "goles_a_favor": 1,
+                    "goles_en_contra": 9,
+                    "diferencia_de_goles": -8,
+                    "puntos": 0
+                }
+            ]
+        },
+        {
+            "grupo": 4,
+            "nombre": "Grupo D",
+            "equipos": [
+                {
+                    "equipo": 1,
+                    "nombre": "Inglaterra",
+                    "partidos": 3,
+                    "victorias": 2,
+                    "derrotas": 0,
+                    "empates": 1,
+                    "goles_a_favor": 5,
+                    "goles_en_contra": 3,
+                    "diferencia_de_goles": 2,
+                    "puntos": 7
+                },
+                {
+                    "equipo": 2,
+                    "nombre": "Francia",
+                    "partidos": 3,
+                    "victorias": 1,
+                    "derrotas": 1,
+                    "empates": 1,
+                    "goles_a_favor": 3,
+                    "goles_en_contra": 3,
+                    "diferencia_de_goles": 0,
+                    "puntos": 4
+                },
+                {
+                    "equipo": 3,
+                    "nombre": "Ucrania",
+                    "partidos": 3,
+                    "victorias": 1,
+                    "derrotas": 2,
+                    "empates": 0,
+                    "goles_a_favor": 2,
+                    "goles_en_contra": 4,
+                    "diferencia_de_goles": -2,
+                    "puntos": 3
+                },
+                {
+                    "equipo": 4,
+                    "nombre": "Suecia",
+                    "partidos": 3,
+                    "victorias": 1,
+                    "derrotas": 2,
+                    "empates": 0,
+                    "goles_a_favor": 5,
+                    "goles_en_contra": 5,
+                    "diferencia_de_goles": 0,
+                    "puntos": 3
+                }
+            ]
+        }
+    ]
+}

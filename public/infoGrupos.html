@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Pachangas - Estadísticas de la fase de grupos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/estadisticas.css">
+    <link rel="stylesheet" href="css/resumen.css">
+</head>
+
+<body>
+
+    <div class="contenedor_tablas">
+
+        <div class="sidebar">
+            <img class="img_sidebar" src="assets/icons/icono_app.jpeg" alt="icono">
+            <a href="/noticias">Noticias</a>
+            <a href="/resumen" style="color: #55cca2;">Resultados</a>
+            <a href="/servicioAPI">Servicio API</a>
+            <a href="#usuario" class="modal-link" id="openLoginModalLink">Usuario</a>
+            <div class="icono_usuario" id="usernameContainer"></div>
+        </div>
+
+        <div class="encabezado_info">
+            <img class="encabezado_resultados" src="assets/icons/banner_2_app.jpg">
+        </div>
+
+        <div class="menu_info">
+            <a href="/resumen">Resumen</a>
+            <a href="/grupos" style="color: #55cca2;">Fase de grupos</a>
+            <a href="/cuartos">Cuartos de final</a>
+            <a href="/semifinales">Semifinales</a>
+            <a href="/final">Final</a>
+            <a href="/selecciones">Equipos</a>
+        </div>
+
+        <a href="https://www.nike.com/">
+            <img src="/assets/anuncios/anuncio_izquierda.jpg" alt="anuncio" class="anuncio_izquierda_estadisticas">
+        </a>
+
+        <a href="https://www.adidas.com/">
+            <img src="/assets/anuncios/anuncio_derecha.jpg" alt="anuncio" class="anuncio_derecha_estadisticas">
+        </a>
+
+        <div class="encabezado_estadisticas">
+            <a class="enlace_grupos" href="/grupos">Volver</a>
+            <h1 class="h1_estadisticas">ESTADÍSTICAS FASE DE GRUPOS</h1>
+        </div>
+
+        <div id="tabla_grupos" class="contenedor_tabla_grupos"></div>
+
+    </div>
+
+    <!-- Fondo difuminado y ventana modal de login -->
+    <div class="modal-overlay" id="loginModalOverlay">
+        <div class="modal" id="loginModal">
+            <form>
+                <span class="span_modal">Login</span>
+                <div>
+                    <input class="input_modal" id="usuario" type="text" name="email" placeholder="Usuario">
+                </div>
+                <div>
+                    <input class="input_modal" id="clave" type="password" name="pass" placeholder="Contraseña">
+                </div>
+                <div>
+                    <button class="boton_iniciar" type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+                </div>
+            </form>
+            <button type="button" class="boton_modal" id="openRegisterModalButton">Registrarse</button>
+            <button class="close-btn" id="closeLoginModalButton">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Fondo difuminado y ventana modal de registro -->
+    <div class="modal-overlay" id="registerModalOverlay">
+        <div class="modal" id="registerModal">
+            <form>
+                <span class="span_modal">Crear usuario</span>
+                <div>
+                    <input class="input_modal" id="new_usuario" type="text" name="email" placeholder="Usuario">
+                </div>
+                <div>
+                    <input class="input_modal" id="new_clave" type="password" name="pass" placeholder="Contraseña">
+                </div>
+                <div>
+                    <button class="boton_modal_registrar" type="button" onclick="registrarUsuario()">Registrar</button>
+                </div>
+            </form>
+            <button class="close-btn_registrar" id="closeRegisterModalButton">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById('openLoginModalLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            openModal('loginModalOverlay', 'loginModal');
+        });
+
+        document.getElementById('closeLoginModalButton').addEventListener('click', function () {
+            closeModal('loginModalOverlay', 'loginModal');
+        });
+
+        document.getElementById('openRegisterModalButton').addEventListener('click', function () {
+            closeModal('loginModalOverlay', 'loginModal');
+            openModal('registerModalOverlay', 'registerModal');
+        });
+
+        document.getElementById('closeRegisterModalButton').addEventListener('click', function () {
+            closeModal('registerModalOverlay', 'registerModal');
+        });
+
+        function openModal(overlayId, modalId) {
+            const overlay = document.getElementById(overlayId);
+            const modal = document.getElementById(modalId);
+            if (overlay && modal) {
+                overlay.style.display = 'flex';
+                setTimeout(() => {
+                    modal.classList.add('show');
+                }, 10); // Timeout to trigger CSS transition
+            } else {
+                console.error(`Element with id '${overlayId}' or '${modalId}' not found`);
+            }
+        }
+
+        function closeModal(overlayId, modalId) {
+            const overlay = document.getElementById(overlayId);
+            const modal = document.getElementById(modalId);
+            if (overlay && modal) {
+                modal.classList.remove('show');
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 300); // Duration of the CSS transition
+            } else {
+                console.error(`Element with id '${overlayId}' or '${modalId}' not found`);
+            }
+        }
+
+        async function iniciarSesion() {
+                const username = document.getElementById('usuario').value;
+                const password = document.getElementById('clave').value;
+
+                try {
+                    const response = await fetch('/identificar', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ username, password }),
+                    });
+                    const result = await response.json();
+                    alert(result.res);
+                    if (result.res === 'login true') {
+                        comprobarSesion();
+                    }
+                } catch (error) {
+                    console.error('Error al iniciar sesión:', error);
+                }
+            }
+
+            async function registrarUsuario() {
+                const username = document.getElementById('new_usuario').value;
+                const password = document.getElementById('new_clave').value;
+
+                try {
+                    const response = await fetch('/registrar', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ username, password }),
+                    });
+                    const result = await response.json();
+                    alert(result.res);
+                } catch (error) {
+                    console.error('Error al registrar usuario:', error);
+                }
+            }
+
+            async function comprobarSesion() {
+                try {
+                    const response = await fetch('/usuario');
+                    const result = await response.json();
+                    if (result.loggedIn) {
+                        mostrarNombreUsuario(result.username, result.equipoFavorito);
+                    }
+                } catch (error) {
+                    console.error('Error al comprobar la sesión del usuario:', error);
+                }
+            }
+
+            function mostrarNombreUsuario(username, equipoFavorito) {
+                const usernameContainer = document.getElementById('usernameContainer');
+                usernameContainer.innerHTML = `
+                <img class="icono_user" src="/assets/icons/icono_usuario.png" alt="icon_user">
+                <p class ="saludo_usuario">${username}</p>
+                <img class="icono_selec" src="/assets/icons/${equipoFavorito}.png" alt="icon_user">
+                <p class="equipo_fav">${equipoFavorito}</p>`;
+            }
+
+            document.addEventListener('DOMContentLoaded', async () => {
+                comprobarSesion();
+                cargarDatos();
+            });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch('/getGrupos')
+                .then(response => response.json())
+                .then(data => mostrarTabla(data))
+                .catch(error => console.error('Error:', error));
+
+            function mostrarTabla(data) {
+                const contenedor = document.getElementById('tabla_grupos');
+
+                data.forEach(documento => {
+                    documento.grupos.forEach(grupo => {
+                        const table = document.createElement('table');
+                        const caption = document.createElement('caption');
+                        caption.textContent = grupo.nombre;
+                        table.appendChild(caption);
+
+                        const thead = document.createElement('thead');
+                        thead.innerHTML = `
+                    <tr>
+                        <th>Equipo</th>
+                        <th>Partidos</th>
+                        <th>Victorias</th>
+                        <th>Derrotas</th>
+                        <th>Empates</th>
+                        <th>Goles a favor</th>
+                        <th>Goles en contra</th>
+                        <th>Diferencia de goles</th>
+                        <th>Puntos</th>
+                    </tr>
+                `;
+                        table.appendChild(thead);
+
+                        const tbody = document.createElement('tbody');
+                        grupo.equipos.forEach(equipo => {
+                            const tr = document.createElement('tr');
+                            tr.innerHTML = `
+                        <td class="nombre_equipo">${equipo.nombre}</td>
+                        <td>${equipo.partidos}</td>
+                        <td>${equipo.victorias}</td>
+                        <td>${equipo.derrotas}</td>
+                        <td>${equipo.empates}</td>
+                        <td>${equipo.goles_a_favor}</td>
+                        <td>${equipo.goles_en_contra}</td>
+                        <td>${equipo.diferencia_de_goles}</td>
+                        <td>${equipo.puntos}</td>
+                    `;
+                            tbody.appendChild(tr);
+                        });
+                        table.appendChild(tbody);
+
+                        contenedor.appendChild(table);
+                    });
+                });
+            }
+        });
+
+    </script>
+    <div class="pie_de_pagina">
+        <div class="container_footer">
+            <img class="anuncio_footer" src="/assets/anuncios/anuncio_footer.jpg" alt="anuncio de ejemplo">
+            <div class="container_p_footer">
+                <p class="p_footer">En Tus Pachangas, estamos comprometidos en brindarte la mejor experiencia para
+                    seguir los mejores partidos de fútbol profesional. Nuestra misión es hacer que puedas enterarte de
+                    todos los partidos que estan sucediendo, y de los resultados de los mejores equipos del mundo.</p>
+                <p class="p_footer"> En Tus Pachangas, el fútbol va más allá del campo. Únete a nuestra comunidad y vive
+                    la pasión por el deporte rey como nunca antes.</p>
+                <p class="p_footer">¡Juega, disfruta y sé parte de Tus Pachangas!</p>
+                <p class="p_footer">Síguenos en redes sociales:</p>
+            </div>
+            <div class="container_redes_sociales">
+                <div class="fila_redes_footer">
+                    <a class="red_footer" href="">Facebook</a> |
+                    <a class="red_footer" href="">Twitter</a> |
+                    <a class="red_footer" href="">Instagram</a>
+                </div>
+                <div class="fila_copy">
+                    <p class="copy">© 2024 Tus Pachangas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

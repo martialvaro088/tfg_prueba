@@ -1,0 +1,958 @@
+{
+    "selecciones": [
+        {
+            "id": 1,
+            "nombre": "España",
+            "seleccionador": "Vicente del Bosque",
+            "escudo": "/assets/icons/esp_icon.png",
+            "jugadores": [
+                {
+                    "id": 1,
+                    "nombre": "Iker Casillas",
+                    "numero": 1,
+                    "posicion": "Portero",
+                    "edad": 31,
+                    "club": "Real Madrid",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 2,
+                    "nombre": "Raúl Albiol",
+                    "numero": 2,
+                    "posicion": "Defensa",
+                    "edad": 26,
+                    "club": "Real Madrid",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 3,
+                    "nombre": "Gerard Piqué",
+                    "numero": 3,
+                    "posicion": "Defensa",
+                    "edad": 25,
+                    "club": "Fc Barcelona",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 4,
+                    "nombre": "Javi Martínez",
+                    "numero": 4,
+                    "posicion": "Defensa",
+                    "edad": 23,
+                    "club": "Athletic Club de Bilbao",
+                    "goles": 0,
+                    "asistencias": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 5,
+                    "nombre": "Juanfran Torres",
+                    "numero": 5,
+                    "posicion": "Defensa",
+                    "edad": 27,
+                    "club": "Atlético de Madrid",
+                    "goles": 0,
+                    "asistencias": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 6,
+                    "nombre": "Andrés Iniesta",
+                    "numero": 6,
+                    "posicion": "Centrocampista",
+                    "edad": 28,
+                    "club": "Fc Barcelona",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 7,
+                    "nombre": "Pedro Rodríguez",
+                    "numero": 7,
+                    "posicion": "Delantero",
+                    "edad": 24,
+                    "club": "Fc Barcelona",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 8,
+                    "nombre": "Xavi Hernández",
+                    "numero": 8,
+                    "posicion": "Centrocampista",
+                    "edad": 32,
+                    "club": "Fc Barcelona",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 9,
+                    "nombre": "Fernando Torres",
+                    "numero": 9,
+                    "posicion": "Delantero",
+                    "edad": 28,
+                    "club": "Chelsea",
+                    "goles": 3,
+                    "imagen": ""
+                },
+                {
+                    "id": 10,
+                    "nombre": "Cesc Fàbregas",
+                    "numero": 10,
+                    "posicion": "Centrocampista",
+                    "edad": 25,
+                    "club": "Fc Barcelona",
+                    "goles": 2,
+                    "imagen": ""
+                },
+                {
+                    "id": 11,
+                    "nombre": "Álvaro Negredo",
+                    "numero": 11,
+                    "posicion": "Delantero",
+                    "edad": 26,
+                    "club": "Sevilla",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 12,
+                    "nombre": "Victor Valdés",
+                    "numero": 12,
+                    "posicion": "Portero",
+                    "edad": 30,
+                    "club": "Fc Barcelona",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 13,
+                    "nombre": "Juan Mata",
+                    "numero": 13,
+                    "posicion": "Delantero",
+                    "edad": 24,
+                    "club": "Chelsea",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 14,
+                    "nombre": "Xabi Alonso",
+                    "numero": 14,
+                    "posicion": "Centrocampista",
+                    "edad": 30,
+                    "club": "Real Madrid",
+                    "goles": 2,
+                    "imagen": ""
+                },
+                {
+                    "id": 15,
+                    "nombre": "Sergio Ramos",
+                    "numero": 15,
+                    "posicion": "Defensa",
+                    "edad": 26,
+                    "club": "Real Madrid",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 16,
+                    "nombre": "Sergio Busquets",
+                    "numero": 16,
+                    "posicion": "Centrocampista",
+                    "edad": 23,
+                    "club": "Fc Barcelona",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 17,
+                    "nombre": "Álvaro Arbeloa",
+                    "numero": 17,
+                    "posicion": "Defensa",
+                    "edad": 29,
+                    "club": "Real Madrid",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 18,
+                    "nombre": "Jordi Alba",
+                    "numero": 18,
+                    "posicion": "Defensa",
+                    "edad": 23,
+                    "club": "Valencia",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 19,
+                    "nombre": "Fernando Llorente",
+                    "numero": 19,
+                    "posicion": "Delantero",
+                    "edad": 27,
+                    "club": "Athletic Club de Bilbao",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 20,
+                    "nombre": "Santi Cazorla",
+                    "numero": 20,
+                    "posicion": "Centrocampista",
+                    "edad": 27,
+                    "club": "Málaga",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 21,
+                    "nombre": "David Silva",
+                    "numero": 21,
+                    "posicion": "Delantero",
+                    "edad": 26,
+                    "club": "Manchester City",
+                    "goles": 2,
+                    "imagen": ""
+                },
+                {
+                    "id": 22,
+                    "nombre": "Jesús Navas",
+                    "numero": 22,
+                    "posicion": "Delantero",
+                    "edad": 26,
+                    "club": "Sevilla",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 23,
+                    "nombre": "Pepe Reina",
+                    "numero": 23,
+                    "posicion": "Portero",
+                    "edad": 29,
+                    "club": "Liverpool",
+                    "goles": 0,
+                    "imagen": ""
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Italia",
+            "seleccionador": "Cesare Prandelli",
+            "escudo": "/assets/icons/ita_icon.png",
+            "jugadores": [
+                {
+                    "id": 1,
+                    "nombre": "Gianluigi Buffon",
+                    "numero": 1,
+                    "posicion": "Portero",
+                    "edad": 34,
+                    "club": "Juventus",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 2,
+                    "nombre": "Ignazio Abate",
+                    "numero": 2,
+                    "posicion": "Defensa",
+                    "edad": 25,
+                    "club": "AC Milan",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 3,
+                    "nombre": "Giorgio Chiellini",
+                    "numero": 3,
+                    "posicion": "Defensa",
+                    "edad": 27,
+                    "club": "Juventus",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 4,
+                    "nombre": "Angelo Ogbonna",
+                    "numero": 4,
+                    "posicion": "Defensa",
+                    "edad": 24,
+                    "club": "Torino",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 5,
+                    "nombre": "Federico Balzaretti",
+                    "numero": 5,
+                    "posicion": "Defensa",
+                    "edad": 30,
+                    "club": "Palermo",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 6,
+                    "nombre": "Thiago Motta",
+                    "numero": 6,
+                    "posicion": "Centrocampista",
+                    "edad": 29,
+                    "club": "Paris Saint-Germain",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 7,
+                    "nombre": "Andrea Barzagli",
+                    "numero": 7,
+                    "posicion": "Defensa",
+                    "edad": 31,
+                    "club": "Juventus",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 8,
+                    "nombre": "Claudio Marchisio",
+                    "numero": 8,
+                    "posicion": "Centrocampista",
+                    "edad": 26,
+                    "club": "Juventus",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 9,
+                    "nombre": "Mario Balotelli",
+                    "numero": 9,
+                    "posicion": "Delantero",
+                    "edad": 21,
+                    "club": "Manchester City",
+                    "goles": 3,
+                    "imagen": ""
+                },
+                {
+                    "id": 10,
+                    "nombre": "Antonio Cassano",
+                    "numero": 10,
+                    "posicion": "Delantero",
+                    "edad": 29,
+                    "club": "AC Milan",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 11,
+                    "nombre": "Antonio Di Natale",
+                    "numero": 11,
+                    "posicion": "Delantero",
+                    "edad": 34,
+                    "club": "Udinese",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 12,
+                    "nombre": "Emiliano Viviano",
+                    "numero": 12,
+                    "posicion": "Portero",
+                    "edad": 26,
+                    "club": "Palermo",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 13,
+                    "nombre": "Salvatore Sirigu",
+                    "numero": 13,
+                    "posicion": "Portero",
+                    "edad": 25,
+                    "club": "Paris Saint-Germain",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 14,
+                    "nombre": "Morgan De Sanctis",
+                    "numero": 14,
+                    "posicion": "Portero",
+                    "edad": 35,
+                    "club": "Napoli",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 15,
+                    "nombre": "Christian Maggio",
+                    "numero": 15,
+                    "posicion": "Defensa",
+                    "edad": 30,
+                    "club": "Napoli",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 16,
+                    "nombre": "Daniele De Rossi",
+                    "numero": 16,
+                    "posicion": "Centrocampista",
+                    "edad": 28,
+                    "club": "Roma",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 17,
+                    "nombre": "Fabio Borini",
+                    "numero": 17,
+                    "posicion": "Delantero",
+                    "edad": 21,
+                    "club": "Roma",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 18,
+                    "nombre": "Riccardo Montolivo",
+                    "numero": 18,
+                    "posicion": "Centrocampista",
+                    "edad": 27,
+                    "club": "Fiorentina",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 19,
+                    "nombre": "Alessandro Diamanti",
+                    "numero": 19,
+                    "posicion": "Centrocampista",
+                    "edad": 29,
+                    "club": "Bologna",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 20,
+                    "nombre": "Emanuele Giaccherini",
+                    "numero": 20,
+                    "posicion": "Centrocampista",
+                    "edad": 27,
+                    "club": "Juventus",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 21,
+                    "nombre": "Leonardo Bonucci",
+                    "numero": 21,
+                    "posicion": "Defensa",
+                    "edad": 25,
+                    "club": "Juventus",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 22,
+                    "nombre": "Ignazio Abate",
+                    "numero": 22,
+                    "posicion": "Defensa",
+                    "edad": 25,
+                    "club": "AC Milan",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 23,
+                    "nombre": "Andrea Pirlo",
+                    "numero": 23,
+                    "posicion": "Centrocampista",
+                    "edad": 33,
+                    "club": "Juventus",
+                    "goles": 0,
+                    "imagen": ""
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Francia",
+            "seleccionador": "Laurent Blanc",
+            "escudo": "/assets/icons/fra_icon.png",
+            "jugadores": [
+                {
+                    "id": 1,
+                    "nombre": "Hugo Lloris",
+                    "numero": 1,
+                    "posicion": "Portero",
+                    "edad": 25,
+                    "club": "Lyon",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 2,
+                    "nombre": "Mathieu Debuchy",
+                    "numero": 2,
+                    "posicion": "Defensa",
+                    "edad": 26,
+                    "club": "Lille",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 3,
+                    "nombre": "Patrice Evra",
+                    "numero": 3,
+                    "posicion": "Defensa",
+                    "edad": 31,
+                    "club": "Manchester United",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 4,
+                    "nombre": "Adil Rami",
+                    "numero": 4,
+                    "posicion": "Defensa",
+                    "edad": 26,
+                    "club": "Valencia",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 5,
+                    "nombre": "Philippe Mexès",
+                    "numero": 5,
+                    "posicion": "Defensa",
+                    "edad": 30,
+                    "club": "AC Milan",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 6,
+                    "nombre": "Yohan Cabaye",
+                    "numero": 6,
+                    "posicion": "Centrocampista",
+                    "edad": 26,
+                    "club": "Newcastle United",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 7,
+                    "nombre": "Franck Ribéry",
+                    "numero": 7,
+                    "posicion": "Delantero",
+                    "edad": 29,
+                    "club": "Bayern Munich",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 8,
+                    "nombre": "Yoann Gourcuff",
+                    "numero": 8,
+                    "posicion": "Centrocampista",
+                    "edad": 25,
+                    "club": "Lyon",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 9,
+                    "nombre": "Olivier Giroud",
+                    "numero": 9,
+                    "posicion": "Delantero",
+                    "edad": 25,
+                    "club": "Montpellier",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 10,
+                    "nombre": "Karim Benzema",
+                    "numero": 10,
+                    "posicion": "Delantero",
+                    "edad": 24,
+                    "club": "Real Madrid",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 11,
+                    "nombre": "Samir Nasri",
+                    "numero": 11,
+                    "posicion": "Centrocampista",
+                    "edad": 24,
+                    "club": "Manchester City",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 12,
+                    "nombre": "Anthony Réveillère",
+                    "numero": 12,
+                    "posicion": "Defensa",
+                    "edad": 32,
+                    "club": "Lyon",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 13,
+                    "nombre": "Jérémy Menez",
+                    "numero": 13,
+                    "posicion": "Delantero",
+                    "edad": 25,
+                    "club": "Paris Saint-Germain",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 14,
+                    "nombre": "Gaël Clichy",
+                    "numero": 14,
+                    "posicion": "Defensa",
+                    "edad": 26,
+                    "club": "Manchester City",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 15,
+                    "nombre": "Florent Malouda",
+                    "numero": 15,
+                    "posicion": "Centrocampista",
+                    "edad": 32,
+                    "club": "Chelsea",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 16,
+                    "nombre": "Steve Mandanda",
+                    "numero": 16,
+                    "posicion": "Portero",
+                    "edad": 27,
+                    "club": "Marseille",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 17,
+                    "nombre": "Alou Diarra",
+                    "numero": 17,
+                    "posicion": "Centrocampista",
+                    "edad": 30,
+                    "club": "Marseille",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 18,
+                    "nombre": "Marvin Martin",
+                    "numero": 18,
+                    "posicion": "Centrocampista",
+                    "edad": 24,
+                    "club": "Sochaux",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 19,
+                    "nombre": "Mathieu Valbuena",
+                    "numero": 19,
+                    "posicion": "Centrocampista",
+                    "edad": 27,
+                    "club": "Marseille",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 20,
+                    "nombre": "Hatem Ben Arfa",
+                    "numero": 20,
+                    "posicion": "Centrocampista",
+                    "edad": 25,
+                    "club": "Newcastle United",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 21,
+                    "nombre": "Laurent Koscielny",
+                    "numero": 21,
+                    "posicion": "Defensa",
+                    "edad": 26,
+                    "club": "Arsenal",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 22,
+                    "nombre": "François Clerc",
+                    "numero": 22,
+                    "posicion": "Defensa",
+                    "edad": 29,
+                    "club": "Nice",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 23,
+                    "nombre": "Benoît Costil",
+                    "numero": 23,
+                    "posicion": "Portero",
+                    "edad": 24,
+                    "club": "Rennes",
+                    "goles": 0,
+                    "imagen": ""
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Portugal",
+            "seleccionador": "Paulo Bento",
+            "escudo": "/assets/icons/por_icon.png",
+            "jugadores": [
+                {
+                    "id": 1,
+                    "nombre": "Rui Patrício",
+                    "numero": 1,
+                    "posicion": "Portero",
+                    "edad": 24,
+                    "club": "Sporting CP",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 2,
+                    "nombre": "Bruno Alves",
+                    "numero": 2,
+                    "posicion": "Defensa",
+                    "edad": 30,
+                    "club": "Zenit St. Petersburg",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 3,
+                    "nombre": "Pepe",
+                    "numero": 3,
+                    "posicion": "Defensa",
+                    "edad": 29,
+                    "club": "Real Madrid",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 4,
+                    "nombre": "Rolando",
+                    "numero": 4,
+                    "posicion": "Defensa",
+                    "edad": 26,
+                    "club": "Porto",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 5,
+                    "nombre": "Fábio Coentrão",
+                    "numero": 5,
+                    "posicion": "Defensa",
+                    "edad": 24,
+                    "club": "Real Madrid",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 6,
+                    "nombre": "Raúl Meireles",
+                    "numero": 6,
+                    "posicion": "Centrocampista",
+                    "edad": 29,
+                    "club": "Chelsea",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 7,
+                    "nombre": "Cristiano Ronaldo",
+                    "numero": 7,
+                    "posicion": "Delantero",
+                    "edad": 27,
+                    "club": "Real Madrid",
+                    "goles": 3,
+                    "imagen": ""
+                },
+                {
+                    "id": 8,
+                    "nombre": "João Moutinho",
+                    "numero": 8,
+                    "posicion": "Centrocampista",
+                    "edad": 25,
+                    "club": "Porto",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 9,
+                    "nombre": "Hélder Postiga",
+                    "numero": 9,
+                    "posicion": "Delantero",
+                    "edad": 29,
+                    "club": "Zaragoza",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 10,
+                    "nombre": "Ricardo Quaresma",
+                    "numero": 10,
+                    "posicion": "Delantero",
+                    "edad": 28,
+                    "club": "Beşiktaş",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 11,
+                    "nombre": "Nani",
+                    "numero": 11,
+                    "posicion": "Delantero",
+                    "edad": 25,
+                    "club": "Manchester United",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 12,
+                    "nombre": "Eduardo",
+                    "numero": 12,
+                    "posicion": "Portero",
+                    "edad": 29,
+                    "club": "Benfica",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 13,
+                    "nombre": "Beto",
+                    "numero": 13,
+                    "posicion": "Portero",
+                    "edad": 30,
+                    "club": "Braga",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 14,
+                    "nombre": "Miguel Lopes",
+                    "numero": 14,
+                    "posicion": "Defensa",
+                    "edad": 25,
+                    "club": "Braga",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 15,
+                    "nombre": "Ricardo Costa",
+                    "numero": 15,
+                    "posicion": "Defensa",
+                    "edad": 30,
+                    "club": "Valencia",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 16,
+                    "nombre": "Rúben Micael",
+                    "numero": 16,
+                    "posicion": "Centrocampista",
+                    "edad": 25,
+                    "club": "Zaragoza",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 17,
+                    "nombre": "Nélson Oliveira",
+                    "numero": 17,
+                    "posicion": "Delantero",
+                    "edad": 20,
+                    "club": "Benfica",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 18,
+                    "nombre": "Hugo Almeida",
+                    "numero": 18,
+                    "posicion": "Delantero",
+                    "edad": 28,
+                    "club": "Beşiktaş",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 19,
+                    "nombre": "Custódio",
+                    "numero": 19,
+                    "posicion": "Centrocampista",
+                    "edad": 28,
+                    "club": "Braga",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 20,
+                    "nombre": "Varela",
+                    "numero": 20,
+                    "posicion": "Delantero",
+                    "edad": 27,
+                    "club": "Porto",
+                    "goles": 1,
+                    "imagen": ""
+                },
+                {
+                    "id": 21,
+                    "nombre": "João Pereira",
+                    "numero": 21,
+                    "posicion": "Defensa",
+                    "edad": 28,
+                    "club": "Valencia",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 22,
+                    "nombre": "Eduardo",
+                    "numero": 22,
+                    "posicion": "Portero",
+                    "edad": 29,
+                    "club": "Benfica",
+                    "goles": 0,
+                    "imagen": ""
+                },
+                {
+                    "id": 23,
+                    "nombre": "Rolando",
+                    "numero": 23,
+                    "posicion": "Defensa",
+                    "edad": 26,
+                    "club": "Porto",
+                    "goles": 0,
+                    "imagen": ""
+                }
+            ]
+        }
+    ]
+}

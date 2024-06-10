@@ -1,0 +1,353 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+}
+
+.img_sidebar {
+    width: 120px;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 200px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.icono_usuario {
+    display: table-caption;
+    width: 100%;
+    text-align: center;
+}
+
+.icono_user {
+    width: 40px;
+    margin-left: 54px;
+}
+
+.saludo_usuario {
+    color: white;
+    margin-left: 52px;
+    margin-top: -7px;
+}
+
+.icono_selec {
+    width: 40px;
+    height: 40px;
+    margin-left: 54px;
+}
+
+.equipo_fav {
+    color: white;
+    margin-left: 52px;
+    margin-top: -3px;
+}
+
+.sidebar a:hover {
+    color: #55cca2;
+}
+
+#chicha {
+    text-align: center;
+    margin-left: 10%;
+    background-color: #171717;
+    margin-top: 9%;
+    padding: 20px;
+}
+
+.container_chat {
+    width: 60%;
+    margin-top: 46px;
+    margin-left: 25%;
+    background-color: white;
+}
+
+.container_noticias {
+    background-color: #171717;
+    width: 63.3%;
+    margin-top: 40px;
+    margin-left: 22%;
+}
+
+.tarjeta_noticia {
+    background-color: #252525;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 12px;
+    margin-bottom: 2%;
+}
+
+.titulo_noticia {
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.descripcion_noticia {
+    color: rgb(167, 167, 167);
+    font-size: 18px;
+}
+
+.fecha_noticia {
+    float: right;
+    width: 8%;
+    color: white;
+    margin-top: -3%;
+}
+
+.encabezado {
+    width: 90%;
+    margin-left: -1.3%;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.encabezado_resultados {
+    width: 100%;
+    height: 134px;
+    text-align: center;
+    color: white;
+}
+
+.sub_encabezado {
+    width: 90%;
+    margin-left: -1.3%;
+    background-color: #111;
+    position: fixed;
+    top: 79px;
+    z-index: 1000;
+}
+
+.sub_encabezado_resultados {
+    text-align: center;
+    color: white;
+}
+
+.banner_noticias {
+    color: #55cca2;
+    top: 138px;
+    left: 10%;
+    position: fixed;
+    background-color: #141215;
+    width: 90%;
+    padding: 10px;
+}
+
+.p_banner_noticias {
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.anuncio_izquierda {
+    position: fixed;
+    z-index: 1001;
+    top: 193px;
+    width: 13.5%;
+    left: 10%;
+    height: 73.7%;
+}
+
+.anuncio_derecha {
+    position: fixed;
+    z-index: 1001;
+    top: 193px;
+    width: 13.5%;
+    left: 86.5%;
+    height: 73.7%;
+}
+
+.content {
+    margin-left: 10%;
+    padding: 20px;
+}
+
+/* Estilos para el fondo difuminado */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 1002;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    z-index: 1002;
+}
+
+/* Animación para mostrar la ventana modal */
+.modal.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.span_modal {
+    font-size: 20px;
+}
+
+.input_modal {
+    border-radius: 12px;
+    padding: 7px;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+.boton_iniciar {
+    color: white;
+    font-size: 16px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 12px;
+    padding: 7px;
+    margin-top: 3%;
+    width: 36%;
+}
+
+.boton_modal {
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 12%;
+    width: 36%;
+}
+
+.close-btn {
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(223, 5, 3);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+
+.boton_modal_registrar {
+    margin-top: 1.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 0%;
+    width: 36%;
+}
+
+.close-btn_registrar {
+    margin-top: -6.4%;
+    padding: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(223, 5, 3);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+
+.close-btn_seleccion {
+    text-decoration: none;
+    margin-top: -2%;
+    margin-left: 16%;
+    background-color: rgb(223, 5, 3);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 3px 4px 5px 1px rgb(181 181 181 / 65%);
+}
+
+.pie_de_pagina {
+    height: fit-content;
+    background-color: #212121;
+    color: #111;
+    padding: 20px;
+}
+
+.container_footer {
+    width: 62%;
+    margin-left: 24%;
+    text-align: center;
+}
+
+.anuncio_footer {
+    margin-top: 10px;
+    width: 40%;
+}
+
+.container_p_footer {
+    padding-top: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.p_footer {
+    text-align: justify;
+    color: white;
+}
+
+.fila_redes_footer {
+    color: white;
+}
+
+.red_footer {
+    text-decoration: none;
+    color: white;
+}
+
+.copy {
+    font-size: 10px;
+    color: #aeaeae;
+}
+
+p {
+    padding: 0px;
+}

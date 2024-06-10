@@ -1,0 +1,51 @@
+body {
+    background-color: #252525;
+}
+
+.div_principal_api {
+    padding: 10px;
+    margin-top: 40px;
+    width: 70.7%;
+    margin-left: 13.9%;
+}
+
+.container_fotos_api {
+    width: 100%;
+}
+
+.fotos_api {
+    display: flex;
+}
+
+.foto_api {
+    border-radius: 12px;
+    width: 48%;
+    margin: 1%;
+}
+
+.container_texto_api {
+    margin-top: 2%;
+}
+
+.tarjeta_p {
+    border-radius: 12px;
+    padding: 8px;
+    width: 96%;
+    margin-left: 1%;
+    margin-top: -3%;
+}
+
+.p_api {
+    color: white;
+    width: 80%;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.p_api_2 {
+    color: white;
+    width: 80%;
+    text-align: right;
+    border-radius: 12px;
+    margin-left: 19.7%;
+}

@@ -1,0 +1,1369 @@
+// app.get('/insertar-selecciones', async (req, res) => {
+//     try {
+//         // Datos de las tres selecciones
+//         const seleccionesData = [
+//             {
+//                 id: 1,
+//                 nombre: "España",
+//                 seleccionador: "Vicente del Bosque",
+//                 escudo: "/assets/icons/esp_icon.png",
+//                 jugadores: [
+//                     {
+//                         id: 1,
+//                         nombre: "Iker Casillas",
+//                         numero: 1,
+//                         posicion: "Portero",
+//                         edad: 31,
+//                         club: "Real Madrid",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 2,
+//                         nombre: "Raúl Albiol",
+//                         numero: 2,
+//                         posicion: "Defensa",
+//                         edad: 26,
+//                         club: "Real Madrid",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 3,
+//                         nombre: "Gerard Piqué",
+//                         numero: 3,
+//                         posicion: "Defensa",
+//                         edad: 25,
+//                         club: "Fc Barcelona",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 4,
+//                         nombre: "Javi Martínez",
+//                         numero: 4,
+//                         posicion: "Defensa",
+//                         edad: 23,
+//                         club: "Athletic Club de Bilbao",
+//                         goles: 0
+//                     },
+//                     {
+//                         id: 5,
+//                         nombre: "Juanfran Torres",
+//                         numero: 5,
+//                         posicion: "Defensa",
+//                         edad: 27,
+//                         club: "Atlético de Madrid",
+//                         goles: 0
+//                     },
+//                     {
+//                         id: 6,
+//                         nombre: "Andrés Iniesta",
+//                         numero: 6,
+//                         posicion: "Centrocampista",
+//                         edad: 28,
+//                         club: "Fc Barcelona",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 7,
+//                         nombre: "Pedro Rodríguez",
+//                         numero: 7,
+//                         posicion: "Delantero",
+//                         edad: 24,
+//                         club: "Fc Barcelona",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 8,
+//                         nombre: "Xavi Hernández",
+//                         numero: 8,
+//                         posicion: "Centrocampista",
+//                         edad: 32,
+//                         club: "Fc Barcelona",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 9,
+//                         nombre: "Fernando Torres",
+//                         numero: 9,
+//                         posicion: "Delantero",
+//                         edad: 28,
+//                         club: "Chelsea",
+//                         goles: 3,
+//                     },
+//                     {
+//                         id: 10,
+//                         nombre: "Cesc Fàbregas",
+//                         numero: 10,
+//                         posicion: "Centrocampista",
+//                         edad: 25,
+//                         club: "Fc Barcelona",
+//                         goles: 2,
+//                     },
+//                     {
+//                         id: 11,
+//                         nombre: "Álvaro Negredo",
+//                         numero: 11,
+//                         posicion: "Delantero",
+//                         edad: 26,
+//                         club: "Sevilla",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 12,
+//                         nombre: "Victor Valdés",
+//                         numero: 12,
+//                         posicion: "Portero",
+//                         edad: 30,
+//                         club: "Fc Barcelona",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 13,
+//                         nombre: "Juan Mata",
+//                         numero: 13,
+//                         posicion: "Delantero",
+//                         edad: 24,
+//                         club: "Chelsea",
+//                         goles: 1,
+//                     },
+//                     {
+//                         id: 14,
+//                         nombre: "Xabi Alonso",
+//                         numero: 14,
+//                         posicion: "Centrocampista",
+//                         edad: 30,
+//                         club: "Real Madrid",
+//                         goles: 2,
+//                     },
+//                     {
+//                         id: 15,
+//                         nombre: "Sergio Ramos",
+//                         numero: 15,
+//                         posicion: "Defensa",
+//                         edad: 26,
+//                         club: "Real Madrid",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 16,
+//                         nombre: "Sergio Busquets",
+//                         numero: 16,
+//                         posicion: "Centrocampista",
+//                         edad: 23,
+//                         club: "Fc Barcelona",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 17,
+//                         nombre: "Álvaro Arbeloa",
+//                         numero: 17,
+//                         posicion: "Defensa",
+//                         edad: 29,
+//                         club: "Real Madrid",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 18,
+//                         nombre: "Jordi Alba",
+//                         numero: 18,
+//                         posicion: "Defensa",
+//                         edad: 23,
+//                         club: "Valencia",
+//                         goles: 1,
+//                     },
+//                     {
+//                         id: 19,
+//                         nombre: "Fernando Llorente",
+//                         numero: 19,
+//                         posicion: "Delantero",
+//                         edad: 27,
+//                         club: "Athletic Club de Bilbao",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 20,
+//                         nombre: "Santi Cazorla",
+//                         numero: 20,
+//                         posicion: "Centrocampista",
+//                         edad: 27,
+//                         club: "Málaga",
+//                         goles: 0,
+//                     },
+//                     {
+//                         id: 21,
+//                         nombre: "David Silva",
+//                         numero: 21,
+//                         posicion: "Delantero",
+//                         edad: 26,
+//                         club: "Manchester City",
+//                         goles: 2,
+//                     },
+//                     {
+//                         id: 22,
+//                         nombre: "Jesús Navas",
+//                         numero: 22,
+//                         posicion: "Delantero",
+//                         edad: 26,
+//                         club: "Sevilla",
+//                         goles: 1,
+//                     },
+//                     {
+//                         id: 23,
+//                         nombre: "Pepe Reina",
+//                         numero: 23,
+//                         posicion: "Portero",
+//                         edad: 29,
+//                         club: "Liverpool",
+//                         goles: 0,
+//                     }
+//                 ]
+//             }
+//         ];
+
+//         // Insertar las selecciones en la base de datos
+//         const resultado = await Selecciones.insertMany(seleccionesData);
+
+//         // Responder con el resultado
+//         res.status(201).json(resultado);
+//     } catch (error) {
+//         // Manejar cualquier error
+//         console.error('Error al insertar las selecciones:', error);
+//         res.status(500).json({ error: 'Error al insertar las selecciones.' });
+//     }
+// });
+
+
+
+
+
+
+// app.get('/insertar-eurocopa', async (req, res) => {
+//     try {
+//         // Datos de la euro
+//         const eurocopaData = [
+//             {
+//                 temporada: "2011/2012",
+//                 fases: [
+//                     {
+//                         grupos: [
+//                             {
+//                                 jornada: 1,
+//                                 partidos: [
+//                                     {
+//                                         partido: 1,
+//                                         grupo: "A",
+//                                         foto: "/assets/fotos/pol_gre_grupo.jpg",
+//                                         datos: {
+//                                             local: "Polonia",
+//                                             visitante: "Grecia",
+//                                             resultado: "1 - 1",
+//                                             fecha: "2012-06-08",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 17,
+//                                                     jugador: "Lewandowski",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 51,
+//                                                     jugador: "Salpingidis",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 2,
+//                                         grupo: "A",
+//                                         foto: "/assets/fotos/rus_che_grupo.jpg",
+//                                         datos: {
+//                                             local: "Rusia",
+//                                             visitante: "Chequia",
+//                                             resultado: "4 - 1",
+//                                             fecha: "2012-06-08",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 15,
+//                                                     jugador: "Dzagoev",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 79,
+//                                                     jugador: "Dzagoev",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 34,
+//                                                     jugador: "Shirokov",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 82,
+//                                                     jugador: "Pávliuchenko",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 52,
+//                                                     jugador: "Pilař",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 3,
+//                                         grupo: "B",
+//                                         foto: "/assets/fotos/hol_din_grupo.jpg",
+//                                         datos: {
+//                                             local: "Holanda",
+//                                             visitante: "Dinamarca",
+//                                             resultado: "0 - 1",
+//                                             fecha: "2012-06-09",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 24,
+//                                                     jugador: "Krohn-Dehli",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 4,
+//                                         grupo: "B",
+//                                         foto: "/assets/fotos/ale_por_grupo.jpeg",
+//                                         datos: {
+//                                             local: "Alemania",
+//                                             visitante: "Portugal",
+//                                             resultado: "1 - 0",
+//                                             fecha: "2012-06-09",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 72,
+//                                                     jugador: "Gómez",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 5,
+//                                         grupo: "C",
+//                                         foto: "/assets/fotos/esp_ita_grupo.jpeg",
+//                                         datos: {
+//                                             local: "España",
+//                                             visitante: "Italia",
+//                                             resultado: "1 - 1",
+//                                             fecha: "2012-06-10",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 64,
+//                                                     jugador: "Fábregas",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 61,
+//                                                     jugador: "Di natale",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 6,
+//                                         grupo: "C",
+//                                         foto: "/assets/fotos/irl_cro_grupo.jpg",
+//                                         datos: {
+//                                             local: "Irlanda",
+//                                             visitante: "Croacia",
+//                                             resultado: "1 - 3",
+//                                             fecha: "2012-06-10",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 19,
+//                                                     jugador: "St Ledger",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 3,
+//                                                     jugador: "Mandžukić",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 48,
+//                                                     jugador: "Mandžukić",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 3,
+//                                                     jugador: "Jelavic",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 7,
+//                                         grupo: "D",
+//                                         foto: "/assets/fotos/fra_ing_grupo.jpg",
+//                                         datos: {
+//                                             local: "Francia",
+//                                             visitante: "Inglaterra",
+//                                             resultado: "1 - 1",
+//                                             fecha: "2012-06-11",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 39,
+//                                                     jugador: "Nasri",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 30,
+//                                                     jugador: "Lescott",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 8,
+//                                         grupo: "D",
+//                                         foto: "/assets/fotos/ucr_sue_grupo.jpeg",
+//                                         datos: {
+//                                             local: "Ucrania",
+//                                             visitante: "Suecia",
+//                                             resultado: "2 - 1",
+//                                             fecha: "2012-06-11",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 55,
+//                                                     jugador: "Shevchenko",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 61,
+//                                                     jugador: "Shevchenko",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 52,
+//                                                     jugador: "Ibrahimović",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     }
+//                                 ]
+//                             },
+//                             {
+//                                 jornada: 2,
+//                                 partidos: [
+//                                     {
+//                                         partido: 1,
+//                                         grupo: "A",
+//                                         foto: "/assets/fotos/gre_che_grupo.jpg",
+//                                         datos: {
+//                                             local: "Grecia",
+//                                             visitante: "Chequia",
+//                                             resultado: "1 - 2",
+//                                             fecha: "2012-06-12",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 53,
+//                                                     jugador: "Gekas",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 3,
+//                                                     jugador: "Jiráček",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 6,
+//                                                     jugador: "Pilař",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 2,
+//                                         grupo: "A",
+//                                         foto: "/assets/fotos/pol_rus_grupo.jpg",
+//                                         datos: {
+//                                             local: "Polonia",
+//                                             visitante: "Rusia",
+//                                             resultado: "1 - 1",
+//                                             fecha: "2012-06-12",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 57,
+//                                                     jugador: "Blaszczykowski",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 37,
+//                                                     jugador: "Dzagoev",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 3,
+//                                         grupo: "B",
+//                                         foto: "/assets/fotos/din_por_grupo.jpg",
+//                                         datos: {
+//                                             local: "Dinamarca",
+//                                             visitante: "Portugal",
+//                                             resultado: "2 - 3",
+//                                             fecha: "2012-06-13",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 41,
+//                                                     jugador: "Bendtner",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 80,
+//                                                     jugador: "Bendtner",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 24,
+//                                                     jugador: "Hélder Postiga",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 36,
+//                                                     jugador: "Pepe",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 87,
+//                                                     jugador: "Varela ",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 4,
+//                                         grupo: "B",
+//                                         foto: "/assets/fotos/hol_ale_grupo.jpg",
+//                                         datos: {
+//                                             local: "Holanda",
+//                                             visitante: "Alemania",
+//                                             resultado: "1 - 2",
+//                                             fecha: "2012-06-13",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 73,
+//                                                     jugador: "Van Persie",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 24,
+//                                                     jugador: "Gómez",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 38,
+//                                                     jugador: "Gómez",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 5,
+//                                         grupo: "C",
+//                                         foto: "/assets/fotos/ita_cro_grupo.jpg",
+//                                         datos: {
+//                                             local: "Italia",
+//                                             visitante: "Croacia",
+//                                             resultado: "1 - 1",
+//                                             fecha: "2012-06-14",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 39,
+//                                                     jugador: "Pirlo",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 72,
+//                                                     jugador: "Mandžukić",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 6,
+//                                         grupo: "C",
+//                                         foto: "/assets/fotos/esp_irl_grupo.jpg",
+//                                         datos: {
+//                                             local: "España",
+//                                             visitante: "Irlanda",
+//                                             resultado: "4 - 0",
+//                                             fecha: "2012-06-14",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 4,
+//                                                     jugador: "Torres",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 70,
+//                                                     jugador: "Torres",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 49,
+//                                                     jugador: "David Silva",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 83,
+//                                                     jugador: "Fábregas",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 7,
+//                                         grupo: "D",
+//                                         foto: "/assets/fotos/ucr_fra_grupo.jpg",
+//                                         datos: {
+//                                             local: "Ucrania",
+//                                             visitante: "Francia",
+//                                             resultado: "0 - 2",
+//                                             fecha: "2012-06-15",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 53,
+//                                                     jugador: "Ménez",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 56,
+//                                                     jugador: "Cabaye",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 8,
+//                                         grupo: "D",
+//                                         foto: "/assets/fotos/sue_ing_grupo.jpeg",
+//                                         datos: {
+//                                             local: "Suecia",
+//                                             visitante: "Inglaterra",
+//                                             resultado: "2 - 3",
+//                                             fecha: "2012-06-15",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 49,
+//                                                     jugador: "Johnson",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 59,
+//                                                     jugador: "Melberg",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 23,
+//                                                     jugador: "Carrol",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 64,
+//                                                     jugador: "Walcot",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 78,
+//                                                     jugador: "Welbeck",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     }
+//                                 ]
+//                             },
+//                             {
+//                                 jornada: 3,
+//                                 partidos: [
+//                                     {
+//                                         partido: 1,
+//                                         grupo: "A",
+//                                         foto: "/assets/fotos/che_pol_grupo.jpg",
+//                                         datos: {
+//                                             local: "Chequia",
+//                                             visitante: "Polonia",
+//                                             resultado: "1 - 0",
+//                                             fecha: "2012-06-16",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 72,
+//                                                     jugador: "Jiráček",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 2,
+//                                         grupo: "A",
+//                                         foto: "/assets/fotos/gre_rus_grupo.jpg",
+//                                         datos: {
+//                                             local: "Grecia",
+//                                             visitante: "Rusia",
+//                                             resultado: "1 - 0",
+//                                             fecha: "2012-06-16",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 45,
+//                                                     jugador: "Karagounis",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 3,
+//                                         grupo: "B",
+//                                         foto: "/assets/fotos/por_hol_grupo.jpg",
+//                                         datos: {
+//                                             local: "Portugal",
+//                                             visitante: "Holanda",
+//                                             resultado: "2 - 1",
+//                                             fecha: "2012-06-17",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 28,
+//                                                     jugador: "Ronaldo",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 74,
+//                                                     jugador: "Ronaldo",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 11,
+//                                                     jugador: "Van der Vaart",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 4,
+//                                         grupo: "B",
+//                                         foto: "/assets/fotos/din_ale_grupo.jpg",
+//                                         datos: {
+//                                             local: "Dinamarca",
+//                                             visitante: "Alemania",
+//                                             resultado: "1 - 2",
+//                                             fecha: "2012-06-17",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 24,
+//                                                     jugador: "Krohn-Dehli",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 19,
+//                                                     jugador: "Podolski",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 80,
+//                                                     jugador: "L. Bender",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 5,
+//                                         grupo: "C",
+//                                         foto: "/assets/fotos/cro_esp_grupo.jpg",
+//                                         datos: {
+//                                             local: "Croacia",
+//                                             visitante: "España",
+//                                             resultado: "0 - 1",
+//                                             fecha: "2012-06-18",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 88,
+//                                                     jugador: "Jesús Navas",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 6,
+//                                         grupo: "C",
+//                                         foto: "/assets/fotos/ita_irl_grupo.jpg",
+//                                         datos: {
+//                                             local: "Italia",
+//                                             visitante: "Irlanda",
+//                                             resultado: "2 - 0",
+//                                             fecha: "2012-06-18",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 35,
+//                                                     jugador: "Cassano",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 90,
+//                                                     jugador: "Balotelli",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 7,
+//                                         grupo: "D",
+//                                         foto: "/assets/fotos/ing_ucr_grupo.jpeg",
+//                                         datos: {
+//                                             local: "Inglaterra",
+//                                             visitante: "Ucrania",
+//                                             resultado: "1 - 0",
+//                                             fecha: "2012-06-19",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 48,
+//                                                     jugador: "Rooney",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 8,
+//                                         grupo: "D",
+//                                         foto: "/assets/fotos/sue_fra_grupo.jpeg",
+//                                         datos: {
+//                                             local: "Suecia",
+//                                             visitante: "Francia",
+//                                             resultado: "2 - 0",
+//                                             fecha: "2012-06-19",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 54,
+//                                                     jugador: "Ibrahimović",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 90,
+//                                                     jugador: "S. Larsson",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     }
+//                                 ]
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "cuartos": [
+//                             {
+//                                 partidos: [
+//                                     {
+//                                         partido: 1,
+//                                         "detalles": "Pasa Portugal",
+//                                         "penaltis": "",
+//                                         foto: "/assets/fotos/che_por_cuartos.jpeg",
+//                                         datos: {
+//                                             local: "Chequia",
+//                                             visitante: "Portugal",
+//                                             resultado: "0 - 1",
+//                                             fecha: "2012-06-21",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 79,
+//                                                     jugador: "Ronaldo",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 2,
+//                                         "detalles": "Pasa Alemania",
+//                                         "penaltis": "",
+//                                         foto: "/assets/fotos/ale_gre_cuartos.jpg",
+//                                         datos: {
+//                                             local: "Alemania",
+//                                             visitante: "Grecia",
+//                                             resultado: "4 - 2",
+//                                             fecha: "2012-06-22",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 39,
+//                                                     jugador: "Lahm",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 61,
+//                                                     jugador: "Khedira",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 68,
+//                                                     jugador: "Cierre",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 74,
+//                                                     jugador: "Reús",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 55,
+//                                                     jugador: "Sámaras",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 89,
+//                                                     jugador: "Salpingidis",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 3,
+//                                         "detalles": "Pasa España",
+//                                         "penaltis": "",
+//                                         foto: "/assets/fotos/esp_fra_cuartos.jpg",
+//                                         datos: {
+//                                             local: "España",
+//                                             visitante: "Francia",
+//                                             resultado: "2 - 0",
+//                                             fecha: "2012-06-23",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 19,
+//                                                     jugador: "Xabi Alonso",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 90,
+//                                                     jugador: "Xabi Alonso",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 4,
+//                                         "detalles": "Pasa Italia en los penaltis (2-4)",
+//                                         "penaltis": "2 - 4",
+//                                         foto: "/assets/fotos/ing_ita_cuartos.jpg",
+//                                         datos: {
+//                                             local: "Inglaterra",
+//                                             visitante: "Italia",
+//                                             resultado: "0 - 0",
+//                                             fecha: "2012-06-24",
+//                                             goles: []
+//                                         }
+//                                     }
+//                                 ]
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "semis": [
+//                             {
+//                                 partidos: [
+//                                     {
+//                                         partido: 1,
+//                                         "detalles": "Pasa España en los penaltis (2-4)",
+//                                         "penaltis": "2 - 4",
+//                                         foto: "/assets/fotos/esp_por_semis.jpeg",
+//                                         datos: {
+//                                             local: "Portugal",
+//                                             visitante: "España",
+//                                             resultado: "0 - 0",
+//                                             fecha: "2012-06-27",
+//                                             goles: []
+//                                         }
+//                                     },
+//                                     {
+//                                         partido: 2,
+//                                         "detalles": "Pasa Alemania",
+//                                         "penaltis": "",
+//                                         foto: "/assets/fotos/ale_ita_semis.jpg",
+//                                         datos: {
+//                                             local: "Alemania",
+//                                             visitante: "Itaia",
+//                                             resultado: "1 - 2",
+//                                             fecha: "2012-06-28",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 90,
+//                                                     jugador: "Özil",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 20,
+//                                                     jugador: "Balotelli",
+//                                                     equipo: "visitante"
+//                                                 },
+//                                                 {
+//                                                     minuto: 36,
+//                                                     jugador: "Balotelli",
+//                                                     equipo: "visitante"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     }
+//                                 ]
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         "final": [
+//                             {
+//                                 partidos: [
+//                                     {
+//                                         partido: 1,
+//                                         foto: "/assets/fotos/final_esp_ita.jpg",
+//                                         datos: {
+//                                             local: "ESPAÑA",
+//                                             visitante: "ITALIA",
+//                                             resultado: "4 - 0",
+//                                             fecha: "2012-07-01",
+//                                             goles: [
+//                                                 {
+//                                                     minuto: 14,
+//                                                     jugador: "David Silva",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 41,
+//                                                     jugador: "Jordi Alba",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 84,
+//                                                     jugador: "Torres",
+//                                                     equipo: "local"
+//                                                 },
+//                                                 {
+//                                                     minuto: 88,
+//                                                     jugador: "Mata",
+//                                                     equipo: "local"
+//                                                 }
+//                                             ]
+//                                         }
+//                                     }
+//                                 ]
+//                             }
+//                         ]
+//                     }
+//                 ]
+//             }
+//         ]
+
+//         // Insertar las selecciones en la base de datos
+//         const resultado = await Eurocopa.insertMany(eurocopaData);
+
+//         // Responder con el resultado
+//         res.status(201).json(resultado);
+//     } catch (error) {
+//         // Manejar cualquier error
+//         console.error('Error al insertar las selecciones:', error);
+//         res.status(500).json({ error: 'Error al insertar las selecciones.' });
+//     }
+// });
+
+
+
+
+
+
+
+// //FUNCIONES POST
+// app.get('/insertar-grupos', async (req, res) => {
+//     try {
+//         // Datos de la euro
+//         const gruposData = [
+//             {
+//                 grupos: [
+//                     {
+//                         grupo: 1,
+//                         nombre: "Grupo A",
+//                         equipos: [
+//                             {
+//                                 equipo: 1,
+//                                 nombre: "Chequia",
+//                                 partidos: 3,
+//                                 victorias: 2,
+//                                 derrotas: 1,
+//                                 empates: 0,
+//                                 goles_a_favor: 4,
+//                                 goles_en_contra: 5,
+//                                 diferencia_de_goles: -1,
+//                                 puntos: 6
+//                             },
+//                             {
+//                                 equipo: 2,
+//                                 nombre: "Grecia",
+//                                 partidos: 3,
+//                                 victorias: 1,
+//                                 derrotas: 1,
+//                                 empates: 1,
+//                                 goles_a_favor: 3,
+//                                 goles_en_contra: 3,
+//                                 diferencia_de_goles: 0,
+//                                 puntos: 4
+//                             },
+//                             {
+//                                 equipo: 3,
+//                                 nombre: "Rusia",
+//                                 partidos: 3,
+//                                 victorias: 1,
+//                                 derrotas: 1,
+//                                 empates: 1,
+//                                 goles_a_favor: 5,
+//                                 goles_en_contra: 3,
+//                                 diferencia_de_goles: 2,
+//                                 puntos: 4
+//                             },
+//                             {
+//                                 equipo: 4,
+//                                 nombre: "Polonia",
+//                                 partidos: 3,
+//                                 victorias: 0,
+//                                 derrotas: 1,
+//                                 empates: 2,
+//                                 goles_a_favor: 2,
+//                                 goles_en_contra: 3,
+//                                 diferencia_de_goles: -1,
+//                                 puntos: 2
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         grupo: 2,
+//                         nombre: "Grupo B",
+//                         equipos: [
+//                             {
+//                                 equipo: 1,
+//                                 nombre: "Alemania",
+//                                 partidos: 3,
+//                                 victorias: 3,
+//                                 derrotas: 0,
+//                                 empates: 0,
+//                                 goles_a_favor: 5,
+//                                 goles_en_contra: 2,
+//                                 diferencia_de_goles: 3,
+//                                 puntos: 9
+//                             },
+//                             {
+//                                 equipo: 2,
+//                                 nombre: "Portugal",
+//                                 partidos: 3,
+//                                 victorias: 2,
+//                                 derrotas: 1,
+//                                 empates: 0,
+//                                 goles_a_favor: 5,
+//                                 goles_en_contra: 4,
+//                                 diferencia_de_goles: 1,
+//                                 puntos: 6
+//                             },
+//                             {
+//                                 equipo: 3,
+//                                 nombre: "Dinamarca",
+//                                 partidos: 3,
+//                                 victorias: 1,
+//                                 derrotas: 2,
+//                                 empates: 0,
+//                                 goles_a_favor: 4,
+//                                 goles_en_contra: 5,
+//                                 diferencia_de_goles: -1,
+//                                 puntos: 3
+//                             },
+//                             {
+//                                 equipo: 4,
+//                                 nombre: "Holanda",
+//                                 partidos: 3,
+//                                 victorias: 0,
+//                                 derrotas: 3,
+//                                 empates: 0,
+//                                 goles_a_favor: 2,
+//                                 goles_en_contra: 5,
+//                                 diferencia_de_goles: -3,
+//                                 puntos: 0
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         grupo: 3,
+//                         nombre: "Grupo C",
+//                         equipos: [
+//                             {
+//                                 equipo: 1,
+//                                 nombre: "España",
+//                                 partidos: 3,
+//                                 victorias: 2,
+//                                 derrotas: 0,
+//                                 empates: 1,
+//                                 goles_a_favor: 6,
+//                                 goles_en_contra: 1,
+//                                 diferencia_de_goles: 5,
+//                                 puntos: 7
+//                             },
+//                             {
+//                                 equipo: 2,
+//                                 nombre: "Italia",
+//                                 partidos: 3,
+//                                 victorias: 1,
+//                                 derrotas: 0,
+//                                 empates: 2,
+//                                 goles_a_favor: 4,
+//                                 goles_en_contra: 2,
+//                                 diferencia_de_goles: 2,
+//                                 puntos: 5
+//                             },
+//                             {
+//                                 equipo: 3,
+//                                 nombre: "Croacia",
+//                                 partidos: 3,
+//                                 victorias: 1,
+//                                 derrotas: 1,
+//                                 empates: 1,
+//                                 goles_a_favor: 4,
+//                                 goles_en_contra: 3,
+//                                 diferencia_de_goles: 1,
+//                                 puntos: 4
+//                             },
+//                             {
+//                                 equipo: 4,
+//                                 nombre: "Irlanda",
+//                                 partidos: 3,
+//                                 victorias: 0,
+//                                 derrotas: 3,
+//                                 empates: 0,
+//                                 goles_a_favor: 1,
+//                                 goles_en_contra: 9,
+//                                 diferencia_de_goles: -8,
+//                                 puntos: 0
+//                             }
+//                         ]
+//                     },
+//                     {
+//                         grupo: 4,
+//                         nombre: "Grupo D",
+//                         equipos: [
+//                             {
+//                                 equipo: 1,
+//                                 nombre: "Inglaterra",
+//                                 partidos: 3,
+//                                 victorias: 2,
+//                                 derrotas: 0,
+//                                 empates: 1,
+//                                 goles_a_favor: 5,
+//                                 goles_en_contra: 3,
+//                                 diferencia_de_goles: 2,
+//                                 puntos: 7
+//                             },
+//                             {
+//                                 equipo: 2,
+//                                 nombre: "Francia",
+//                                 partidos: 3,
+//                                 victorias: 1,
+//                                 derrotas: 1,
+//                                 empates: 1,
+//                                 goles_a_favor: 3,
+//                                 goles_en_contra: 3,
+//                                 diferencia_de_goles: 0,
+//                                 puntos: 4
+//                             },
+//                             {
+//                                 equipo: 3,
+//                                 nombre: "Ucrania",
+//                                 partidos: 3,
+//                                 victorias: 1,
+//                                 derrotas: 2,
+//                                 empates: 0,
+//                                 goles_a_favor: 2,
+//                                 goles_en_contra: 4,
+//                                 diferencia_de_goles: -2,
+//                                 puntos: 3
+//                             },
+//                             {
+//                                 equipo: 4,
+//                                 nombre: "Suecia",
+//                                 partidos: 3,
+//                                 victorias: 1,
+//                                 derrotas: 2,
+//                                 empates: 0,
+//                                 goles_a_favor: 5,
+//                                 goles_en_contra: 5,
+//                                 diferencia_de_goles: 0,
+//                                 puntos: 3
+//                             }
+//                         ]
+//                     }
+//                 ]
+//             }
+//         ]
+
+//         // Insertar las selecciones en la base de datos
+//         const resultado = await Grupos.insertMany(gruposData);
+
+//         // Responder con el resultado
+//         res.status(201).json(resultado);
+//     } catch (error) {
+//         // Manejar cualquier error
+//         console.error('Error al insertar los grupos:', error);
+//         res.status(500).json({ error: 'Error al insertar los grupos.' });
+//     }
+// });
+
+
+
+
+
+
+// app.get('/insertar-usuarios', async (req, res) => {
+//     try {
+//         // Datos de la euro
+//         const usuariosData = [
+//             {
+//                 username: "admin",
+//                 password: "1234",
+//                 jugador_favorito: "",
+//                 equipo_favorito: ""
+//             },
+//             {
+//                 username: "alvaro",
+//                 password: "1234",
+//                 jugador_favorito: "",
+//                 equipo_favorito: ""
+//             }
+//         ]
+
+//         // Insertar las selecciones en la base de datos
+//         const resultado = await Usuarios.insertMany(usuariosData);
+
+//         // Responder con el resultado
+//         res.status(201).json(resultado);
+//     } catch (error) {
+//         // Manejar cualquier error
+//         console.error('Error al insertar los grupos:', error);
+//         res.status(500).json({ error: 'Error al insertar los grupos.' });
+//     }
+// });

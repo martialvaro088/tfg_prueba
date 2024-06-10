@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Pachangas - Equipos Euro 2012</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/selecciones.css">
+    <link rel="stylesheet" href="css/resumen.css">
+    <link rel="stylesheet" href="css/resumen_final.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <img class="img_sidebar" src="assets/icons/icono_app.jpeg" alt="icono">
+        <a href="/noticias">Noticias</a>
+        <a href="/resumen" style="color: #55cca2;">Resultados</a>
+        <a href="/servicioAPI">Servicio API</a>
+        <a href="#usuario" class="modal-link" id="openLoginModalLink">Usuario</a>
+        <div class="icono_usuario" id="usernameContainer"></div>
+    </div>
+
+    <a href="https://www.nike.com/">
+        <img src="/assets/anuncios/anuncio_izquierda.jpg" alt="anuncio" class="anuncio_izquierda">
+    </a>
+
+    <a href="https://www.adidas.com/">
+        <img src="/assets/anuncios/anuncio_derecha.jpg" alt="anuncio" class="anuncio_derecha">
+    </a>
+
+    <div id="chicha">
+
+        <div class="encabezado">
+            <img class="encabezado_resultados" src="assets/icons/banner_2_app.jpg">
+        </div>
+
+        <div class="menu">
+            <a href="/resumen">Resumen</a>
+            <a href="/grupos">Fase de grupos</a>
+            <a href="/cuartos">Cuartos de final</a>
+            <a href="/semifinales">Semifinales</a>
+            <a href="/final">Final</a>
+            <a href="/selecciones" style="color: #55cca2;">Equipos</a>
+        </div>
+
+        <!-- Fondo difuminado y ventana modal de login -->
+        <div class="modal-overlay" id="loginModalOverlay">
+            <div class="modal" id="loginModal">
+                <form>
+                    <span class="span_modal">Login</span>
+                    <div>
+                        <input class="input_modal" id="usuario" type="text" name="username" placeholder="Usuario">
+                    </div>
+                    <div>
+                        <input class="input_modal" id="clave" type="password" name="password" placeholder="Contraseña">
+                    </div>
+                    <div>
+                        <button class="boton_iniciar" type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+                    </div>
+                </form>
+                <button type="button" class="boton_modal" id="openRegisterModalButton">Registrarse</button>
+                <button class="close-btn" id="closeLoginModalButton">Cerrar</button>
+            </div>
+        </div>
+
+        <!-- Fondo difuminado y ventana modal de registro -->
+        <div class="modal-overlay" id="registerModalOverlay">
+            <div class="modal" id="registerModal">
+                <form>
+                    <span class="span_modal">Crear usuario</span>
+                    <div>
+                        <input class="input_modal" id="new_usuario" type="text" name="username" placeholder="Usuario">
+                    </div>
+                    <div>
+                        <input class="input_modal" id="new_clave" type="password" name="password"
+                            placeholder="Contraseña">
+                    </div>
+                    <div>
+                        <button class="boton_modal_registrar" type="button"
+                            onclick="registrarUsuario()">Registrar</button>
+                    </div>
+                </form>
+                <button class="close-btn_registrar" id="closeRegisterModalButton">Cerrar</button>
+            </div>
+        </div>
+
+        <h1 class="h1_equipos">SELECCIONES</h1>
+        <div id="container_selecciones" class="selecciones"></div>
+        <div id="container_jugadores" class="jugadores"></div> <!-- Contenedor para los jugadores -->
+
+        <script>
+            document.getElementById('openLoginModalLink').addEventListener('click', function (event) {
+                event.preventDefault();
+                openModal('loginModalOverlay', 'loginModal');
+            });
+
+            document.getElementById('closeLoginModalButton').addEventListener('click', function () {
+                closeModal('loginModalOverlay', 'loginModal');
+            });
+
+            document.getElementById('openRegisterModalButton').addEventListener('click', function () {
+                closeModal('loginModalOverlay', 'loginModal');
+                openModal('registerModalOverlay', 'registerModal');
+            });
+
+            document.getElementById('closeRegisterModalButton').addEventListener('click', function () {
+                closeModal('registerModalOverlay', 'registerModal');
+            });
+
+            function openModal(overlayId, modalId) {
+                const overlay = document.getElementById(overlayId);
+                const modal = document.getElementById(modalId);
+                if (overlay && modal) {
+                    overlay.style.display = 'flex';
+                    setTimeout(() => {
+                        modal.classList.add('show');
+                    }, 10); // Timeout to trigger CSS transition
+                } else {
+                    console.error(`Element with id '${overlayId}' or '${modalId}' not found`);
+                }
+            }
+
+            function closeModal(overlayId, modalId) {
+                const overlay = document.getElementById(overlayId);
+                const modal = document.getElementById(modalId);
+                if (overlay && modal) {
+                    modal.classList.remove('show');
+                    setTimeout(() => {
+                        overlay.style.display = 'none';
+                    }, 300); // Duration of the CSS transition
+                } else {
+                    console.error(`Element with id '${overlayId}' or '${modalId}' not found`);
+                }
+            }
+
+            async function iniciarSesion() {
+                const username = document.getElementById('usuario').value;
+                const password = document.getElementById('clave').value;
+
+                try {
+                    const response = await fetch('/identificar', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ username, password }),
+                    });
+                    const result = await response.json();
+                    alert(result.res);
+                    if (result.res === 'login true') {
+                        comprobarSesion();
+                    }
+                } catch (error) {
+                    console.error('Error al iniciar sesión:', error);
+                }
+            }
+
+            async function registrarUsuario() {
+                const username = document.getElementById('new_usuario').value;
+                const password = document.getElementById('new_clave').value;
+
+                try {
+                    const response = await fetch('/registrar', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ username, password }),
+                    });
+                    const result = await response.json();
+                    alert(result.res);
+                } catch (error) {
+                    console.error('Error al registrar usuario:', error);
+                }
+            }
+
+            async function comprobarSesion() {
+                try {
+                    const response = await fetch('/usuario');
+                    const result = await response.json();
+                    if (result.loggedIn) {
+                        mostrarNombreUsuario(result.username, result.equipoFavorito);
+                    }
+                } catch (error) {
+                    console.error('Error al comprobar la sesión del usuario:', error);
+                }
+            }
+
+            function mostrarNombreUsuario(username, equipoFavorito) {
+                const usernameContainer = document.getElementById('usernameContainer');
+                usernameContainer.innerHTML = `
+                <img class="icono_user" src="/assets/icons/icono_usuario.png" alt="icon_user">
+                <p class ="saludo_usuario">${username}</p>
+                <img class="icono_selec" src="/assets/icons/${equipoFavorito}.png" alt="icon_user">
+                <p class="equipo_fav">${equipoFavorito}</p>`;
+            }
+
+            document.addEventListener('DOMContentLoaded', async () => {
+                comprobarSesion();
+                cargarDatos();
+            });
+
+            async function marcarFavorito(seleccionId) {
+                try {
+                    const response = await fetch('/marcarFavorito', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ seleccionId }),
+                    });
+                    const result = await response.json();
+                    alert(result.res);
+                } catch (error) {
+                    console.error('Error al marcar como favorito:', error);
+                }
+            }
+
+            function loadJSON(callback) {
+                var xobj = new XMLHttpRequest();
+                xobj.overrideMimeType("application/json");
+                xobj.open('GET', '/getSelecciones', true);
+                xobj.onreadystatechange = function () {
+                    if (xobj.readyState == 4 && xobj.status == "200") {
+                        callback(xobj.responseText);
+                    }
+                };
+                xobj.send(null);
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                fetch('/getSelecciones')
+                    .then(response => response.json())
+                    .then(data => mostrarSelecciones(data))
+                    .catch(error => console.error('Error:', error));
+
+                function mostrarSelecciones(data) {
+                    const contenedor = document.getElementById('container_selecciones');
+
+                    data.forEach(seleccion => {
+                        const seleccionDiv = document.createElement('div');
+                        seleccionDiv.className = 'seleccion';
+                        seleccionDiv.innerHTML = `
+                <div class="tarjeta_seleccion">
+                    <img class="escudo_seleccion" src="${seleccion.escudo}">
+                    <p class="p_nombre">${seleccion.nombre}</p>
+                    <p class="p_entrenador">Seleccionador: ${seleccion.seleccionador}</p>
+                    <a class="info_seleccion">
+                        <img class="icon_info" src="/assets/icons/icono_info.png" onclick="irSeleccion(${seleccion.id})">
+                    </a>
+                    <a class="chat_seleccion" onclick="marcarFavorito('${seleccion._id}')">
+                        <img class="icon_chat" src="/assets/icons/icono_estrella.png">
+                    </a>
+                </div>
+            `;
+                        contenedor.appendChild(seleccionDiv);
+                    });
+                }
+            });
+
+            function irSeleccion(id) {
+                // Redirigir a otra página o mostrar más información sobre la selección
+                console.log("Seleccion ID:", id);
+                // Aquí puedes agregar la lógica para redirigir a otra página o mostrar un modal con más información
+            }
+
+            function irSeleccion(id_seleccion) {
+                window.location.href = `equipos?param=${id_seleccion}`;
+            }
+        </script>
+
+    </div>
+    <div class="pie_de_pagina">
+        <div class="container_footer">
+            <img class="anuncio_footer" src="/assets/anuncios/anuncio_footer.jpg" alt="anuncio de ejemplo">
+            <div class="container_p_footer">
+                <p class="p_footer">En Tus Pachangas, estamos comprometidos en brindarte la mejor experiencia para
+                    seguir los mejores partidos de fútbol profesional. Nuestra misión es hacer que puedas enterarte de
+                    todos los partidos que estan sucediendo, y de los resultados de los mejores equipos del mundo.</p>
+                <p class="p_footer"> En Tus Pachangas, el fútbol va más allá del campo. Únete a nuestra comunidad y vive
+                    la pasión por el deporte rey como nunca antes.</p>
+                <p class="p_footer">¡Juega, disfruta y sé parte de Tus Pachangas!</p>
+                <p class="p_footer">Síguenos en redes sociales:</p>
+            </div>
+            <div class="container_redes_sociales">
+                <div class="fila_redes_footer">
+                    <a class="red_footer" href="">Facebook</a> |
+                    <a class="red_footer" href="">Twitter</a> |
+                    <a class="red_footer" href="">Instagram</a>
+                </div>
+                <div class="fila_copy">
+                    <p class="copy">© 2024 Tus Pachangas. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "socketprivados",
+  "app-name": "myapp",
+  "package-name": "mypkg",
+  "icon": "./public/icon.png",
+  "permission": [
+    "android.permission.INTERNET"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "androidjs": "^2.0.6",
+    "androidjs-builder": "^2.3.2",
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.12",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mogoose": "^0.0.1-security",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1",
+    "mysql": "^2.18.1",
+    "rss": "^1.2.2",
+    "rss-parser": "^3.13.0",
+    "socket.io": "^4.7.2"
+  }
+}
